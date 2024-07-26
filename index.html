@@ -1,35 +1,46 @@
 <html>
     <head>
         <style>
+            div.groups {
+                width: 1000px;
+            }
             div.groups table {
-                width: 100%
+                width: 100%;
+                
+            }
+            div.groups table th,td {
+                text-align: center;
+                color: #111;
+                text-shadow: 1px 1px #ddd;
+                background: #ddd;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                padding: 10px;
+            }
+            div.groups table th{
+                background: #bfbfbf;
             }
             div.groups th:nth-of-type(1) {
-                width: 20%
+                width: 40%
             }
-            div.groups th:nth-of-type(2) {
-                width: 15%
-            }
-            div.groups th:nth-of-type(3) {
-                width: 15%
-            }
-            div.groups th:nth-of-type(4) {
-                width: 15%
-            }
-            div.groups th:nth-of-type(5) {
-                width: 15%
-            }
+            
             div.groups th:nth-of-type(6) {
-                width: 10%
+                width: 5%
             }
             div.groups th:nth-of-type(7) {
-                width: 10%
+                width: 5%
             }
-            div.groups table tr td:nth-of-type(6) {
-                text-align: center;
+            div.groups th:nth-of-type(8) {
+                width: 5%;
             }
-            div.groups table tr td:nth-of-type(7) {
-                text-align: center;
+            div.groups td:nth-of-type(8) {
+                font-weight: 600;
+            }
+            .win {
+                font-weight: bold;
+            }
+            .self {
+                background: #bfbfbf;
             }
         </style>
     </head>
@@ -43,35 +54,35 @@
        
         <div class="groups">
             <table>
-                <tr><th>Grupė A</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th></tr>
-                <tr><td>VYTAUTAS ŠPOKAUSKAS</td><td>X</td><td>6:3 6:1</td><td>6:0 6:1</td><td>6:1 6:0</td><td>3</td><td>0</td></tr>
-                <tr><td>TOMAS BRAZDŽIŪNAS</td><td>3:6 1:6</td><td>X</td><td>7:6 2:6 6:1</td><td>6:2 6:7 6:4</td><td>2</td><td>1</td></tr>
-                <tr><td>RENIUS</td><td>0:6 1:6</td><td>6:7 6:2 1:6</td><td>X</td><td>3:6 6:3 6:0</td><td>1</td><td>2</td></tr>
-                <tr><td>KĘSTUTIS</td><td>1:6 0:6</td><td>2:6 7:6 4:6</td><td>6:3 3:6 0:6</td><td>X</td><td>0</td><td>3</td></tr>
+                <tr><th>Grupė A</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
+                <tr><td>VYTAUTAS ŠPOKAUSKAS</td><td class="self">X</td><td class="win">6:3 6:1</td><td class="win">6:0 6:1</td><td class="win">6:1 6:0</td><td>3</td><td>0</td><td>1</td></tr>
+                <tr><td>TOMAS BRAZDŽIŪNAS</td><td>3:6 1:6</td><td class="self">X</td><td class="win">7:6 2:6 6:1</td><td class="win">6:2 6:7 6:4</td><td>2</td><td>1</td><td>2</td></tr>
+                <tr><td>RENIUS</td><td>0:6 1:6</td><td>6:7 6:2 1:6</td><td class="self">X</td><td class="win">3:6 6:3 6:0</td><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>KĘSTUTIS</td><td>1:6 0:6</td><td>2:6 7:6 4:6</td><td>6:3 3:6 0:6</td><td class="self">X</td><td>0</td><td>3</td><td>4</td></tr>
             </table>
             <p></p>
             <table>
-                <tr><th>Grupė B</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th></tr>
-                <tr><td>GEDIMINAS RASTENIS</td><td>X</td><td>5:7 0:6</td><td>6:1 6:1</td><td>6:1 6:0</td><td>2</td><td>1</td></tr>
-                <tr><td>RAIMONDAS ČEPOKASS</td><td>7:6 6:0</td><td>X</td><td>6:1 6:1</td><td>6:0 6:0</td><td>3</td><td>0</td></tr>
-                <tr><td>ARMANDAS TAMULĖNAS</td><td>1:6 1:6</td><td>1:6 1:6</td><td>X</td><td>6:1 6:3</td><td>1</td><td>2</td></tr>
-                <tr><td>DONATAS MAJAUSKAS</td><td>1:6 0:6</td><td>0:6 0:6</td><td>1:6 3:6</td><td>X</td><td>0</td><td>3</td></tr>
+                <tr><th>Grupė B</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
+                <tr><td>GEDIMINAS RASTENIS</td><td class="self">X</td><td>5:7 0:6</td><td class="win">6:1 6:1</td><td class="win">6:1 6:0</td><td>2</td><td>1</td><td>2</td></tr>
+                <tr><td>RAIMONDAS ČEPOKASS</td><td class="win">7:6 6:0</td><td class="self">X</td><td class="win">6:1 6:1</td><td class="win">6:0 6:0</td><td>3</td><td>0</td><td>1</td></tr>
+                <tr><td>ARMANDAS TAMULĖNAS</td><td>1:6 1:6</td><td>1:6 1:6</td><td class="self">X</td><td class="win">6:1 6:3</td><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>DONATAS MAJAUSKAS</td><td>1:6 0:6</td><td>0:6 0:6</td><td>1:6 3:6</td><td class="self">X</td><td>0</td><td>3</td><td>4</td></tr>
             </table>
             <p></p>
             <table>
-                <tr><th>Grupė C</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th></tr>
-                <tr><td>VADIMAS PIPYNĖ</td><td>X</td><td>6:7 6:3 6:2</td><td>6:4 7:5</td><td>7:6 6:3</td><td>3</td><td>0</td></tr>
-                <tr><td>SIMONAS GUDAS</td><td>7:6 3:6 2:6</td><td>X</td><td>0:6 7:6 6:2</td><td>3:6 4:6</td><td>1</td><td>2</td></tr>
-                <tr><td>ŽILVINAS TALOČKA</td><td>4:6 5:7</td><td>6:0 6:7 2:6</td><td>X</td><td>3:6 2:6</td><td>0</td><td>3</td></tr>
-                <tr><td>DOMINGO AVELLANEDA</td><td>6:7 3:6</td><td>6:3 6:4</td><td>6:3 6:2</td><td>X</td><td>2</td><td>1</td></tr>
+                <tr><th>Grupė C</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
+                <tr><td>VADIMAS PIPYNĖ</td><td class="self">X</td><td class="win">6:7 6:3 6:2</td><td class="win">6:4 7:5</td><td class="win">7:6 6:3</td><td>3</td><td>0</td><td>1</td></tr>
+                <tr><td>SIMONAS GUDAS</td><td>7:6 3:6 2:6</td><td class="self">X</td><td class="win">0:6 7:6 6:2</td><td>3:6 4:6</td><td>1</td><td>2</td><td>3</td></tr>
+                <tr><td>ŽILVINAS TALOČKA</td><td>4:6 5:7</td><td>6:0 6:7 2:6</td><td class="self">X</td><td>3:6 2:6</td><td>0</td><td>3</td><td>4</td></tr>
+                <tr><td>DOMINGO AVELLANEDA</td><td>6:7 3:6</td><td class="win">6:3 6:4</td><td class="win">6:3 6:2</td><td class="self">X</td><td>2</td><td>1</td><td>2</td></tr>
             </table>
             <p></p>
             <table>
-                <tr><th>Grupė D</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th></tr>
-                <tr><td>DOVYDAS VALANTONIS</td><td>X</td><td>3:6 6:7</td><td>6:2 6:0</td><td>6:2 6:3</td><td>2</td><td>1</td></tr>
-                <tr><td>ARNAS VAČIKAUSKAS</td><td>6:3 7:6</td><td>X</td><td>4:6 6:2 2:6</td><td>6:3 4:6 7:6</td><td>2</td><td>1</td></tr>
-                <tr><td>MANTAS BARTUŠKEVIČIUS</td><td>2:6 0:6</td><td>6:4 2:6 6:2</td><td>X</td><td>6:4 6:2</td><td>2</td><td>1</td></tr>
-                <tr><td>ROLANDAS AUKŠTIKALNIS</td><td>2:6 3:6</td><td>3:6 6:4 6:7</td><td>4:6 2:6</td><td>X</td><td>0</td><td>3</td></tr>
+                <tr><th>Grupė D</th><th></th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>&nbsp;&nbsp;</th><th>W</th><th>L</th><th>Vieta</th></tr>
+                <tr><td>DOVYDAS VALANTONIS</td><td class="self">X</td><td>3:6 6:7</td><td class="win">6:2 6:0</td><td class="win">6:2 6:3</td><td>2</td><td>1</td><td>1</td></tr>
+                <tr><td>ARNAS VAČIKAUSKAS</td><td class="win">6:3 7:6</td><td class="self">X</td><td>4:6 6:2 2:6</td><td class="win">6:3 4:6 7:6</td><td>2</td><td>1</td><td>2</td></tr>
+                <tr><td>MANTAS BARTUŠKEVIČIUS</td><td>2:6 0:6</td><td class="win">6:4 2:6 6:2</td><td class="self">X</td><td class="win">6:4 6:2</td><td>2</td><td>1</td><td>3</td></tr>
+                <tr><td>ROLANDAS AUKŠTIKALNIS</td><td>2:6 3:6</td><td>3:6 6:4 6:7</td><td>4:6 2:6</td><td class="self">X</td><td>0</td><td>3</td><td>4</td></tr>
             </table>
         </div>
     </body>
